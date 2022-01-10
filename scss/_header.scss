@@ -1,0 +1,209 @@
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .top-bar {
+        font-size: 0.875rem;
+        background-color: #350a4e;
+        visibility: visible;
+        height: 36px;
+        -webkit-transition: all 400ms ease;
+        -moz-transition: all 400ms ease;
+        -ms-transition: all 400ms ease;
+        -o-transition: all 400ms ease;
+        transition: all 400ms ease;
+        opacity: 1;
+        &.scrolled {
+            visibility: hidden;
+            height: 0;
+            transition: all ease-in-out 400ms;
+            -webkit-transition: all ease-in-out 400ms;
+            -moz-transition: all ease-in-out 400ms;
+            -ms-transition: all ease-in-out 400ms;
+            -o-transition: all ease-in-out 400ms;
+            opacity: 0;
+        }
+        .grid {
+            .row {
+                .col {
+                    width: 100%;
+                    .phone-number {
+                        color: var(--white);
+                        font-size: 0.625rem;
+                        line-height: 36px;
+                        margin-right: 36px;
+                    }
+                    .social {
+                        .social-list {
+                            display: block;
+                            list-style: none;
+                            align-items: center;
+                            height: 100%;
+                            align-content: center;
+                            .social-item {
+                                list-style: none;
+                                display: inline-block;
+                                height: 100%;
+                                /* &:not(:last-child) {
+                                    padding-right: 1.4rem;
+                                } */
+                                .social-icon {
+                                    line-height: 36px;
+                                    padding: 0 0.625rem;
+
+                                    i {
+                                        color: var(--white);
+                                        font-size: 12px;
+                                        -webkit-transition: all 200ms ease;
+                                        -moz-transition: all 200ms ease;
+                                        -ms-transition: all 200ms ease;
+                                        -o-transition: all 200ms ease;
+                                        transition: all 200ms ease;
+                                        &:hover {
+                                            color: #fa9e1c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .user-box {
+                        margin-left: auto;
+                        .login-btn {
+                            color: var(--white);
+                            font-size: 0.625rem;
+                            text-transform: uppercase;
+                            line-height: 36px;
+                            position: relative;
+                            padding-right: 14px;
+                            &:hover {
+                                color: #fa9e1c;
+                            }
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 3px;
+                                display: inline-block;
+                                width: 2px;
+                                height: 14px;
+                                background-color: var(--white);
+                            }
+                        }
+                        .register-btn {
+                            color: var(--white);
+                            font-size: 0.625rem;
+                            text-transform: uppercase;
+                            line-height: 36px;
+                            &:hover {
+                                color: #fa9e1c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
+        display: block;
+        background-color: rgba(54, 19, 84, 0.6);
+        .grid {
+            .row {
+                .col {
+                    &.main-nav-col {
+                        height: 143px;
+                        -webkit-transition: all 500ms ease;
+                        -moz-transition: all 500ms ease;
+                        -ms-transition: all 500ms ease;
+                        -o-transition: all 500ms ease;
+                        transition: all 500ms ease;
+                        &.scrolled {
+                            height: 100px;
+                        }
+                    }
+
+                    width: 100%;
+                    .brand-logo {
+                        padding-bottom: 13px;
+                        img {
+                            display: inline-block;
+                            margin-right: 6px;
+                        }
+                        .brand-title {
+                            display: inline-block;
+                            color: #f4f4f8;
+                            font-size: 1.875rem;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .nav {
+                        .menu-list {
+                            .menu-item {
+                                &:not(:last-child) {
+                                    margin-right: 40px;
+                                }
+                                .menu-link {
+                                    position: relative;
+                                    color: var(--white);
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                    &:hover {
+                                        &.menu-link::after {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            transition: opacity ease 300ms;
+                                            -webkit-transition: opacity ease
+                                                300ms;
+                                            -moz-transition: opacity ease 300ms;
+                                            -ms-transition: opacity ease 300ms;
+                                            -o-transition: opacity ease 300ms;
+                                        }
+                                    }
+                                    &::after {
+                                        content: "";
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        position: absolute;
+                                        bottom: -10px;
+                                        left: 0;
+                                        background: linear-gradient(
+                                            to right,
+                                            #fa9e1b,
+                                            #8d4fff
+                                        );
+                                        width: 100%;
+                                        height: 2px;
+                                        transition: opacity ease 300ms;
+                                        -webkit-transition: opacity ease 300ms;
+                                        -moz-transition: opacity ease 300ms;
+                                        -ms-transition: opacity ease 300ms;
+                                        -o-transition: opacity ease 300ms;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .menu-btn {
+                        display: none;
+                        cursor: pointer;
+                        .fas {
+                            color: var(--white);
+                            font-size: 18px;
+                        }
+                    }
+                    .search-btn {
+                        .fas {
+                            color: var(--white);
+                            cursor: pointer;
+                            &:hover {
+                                color: #fa9e1c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+$breakpoints-up: (
+    "small": "36em",
+    "medium": "48em",
+    "large": "62em",
+    "xlarge": "75em",
+    "xxlarge": "87.5em",
+);
+
+/* 575px, 767px, 991px, 1023px, 1239px */
+$breakpoints-down: (
+    "small": "35.9375em",
+    "medium": "47.9375em",
+    "large": "61.9375em",
+    "xlarge": "74.9375em",
+    "xxlarge": "87.4375em",
+);
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint($minWidth, $maxWidth) {
+    @media (min-width: map-get($breakpoints-up, $minWidth)) and (max-width: map-get($breakpoints-down, $maxWidth)) {
+        @content;
+    }
+}

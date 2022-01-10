@@ -1,0 +1,145 @@
+#tour {
+    .tour-container {
+        margin: 80px 0;
+        .content {
+            width: 100%;
+            .heading-text {
+                display: block;
+                margin-bottom: 30px;
+                font-size: 36px;
+                font-weight: 700;
+                text-transform: capitalize;
+                text-align: center;
+                color: var(--black);
+            }
+            .paragraph-text {
+                display: block;
+                margin-bottom: 50px;
+                font-size: 24px;
+                font-style: italic;
+                text-align: center;
+                text-transform: capitalize;
+                color: var(--gray);
+            }
+        }
+        .card-container {
+            .card-item {
+                position: relative;
+                height: 425px;
+                .card-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    z-index: 1;
+                }
+                .card-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(49, 18, 75, 0.55);
+                    z-index: 2;
+                }
+                .card-content {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 3;
+                    .card-date {
+                        text-align: center;
+                        p {
+                            display: inline-block;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: var(--white);
+                            background-color: var(--yellow);
+                        }
+                    }
+                    .content-center {
+                        .card-locate {
+                            color: var(--white);
+                            font-size: 59px;
+                            font-weight: 700;
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                        .card-price {
+                            color: var(--white);
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-align: center;
+                            text-transform: capitalize;
+                            margin-bottom: 8px;
+                        }
+                        .rating {
+                            position: relative;
+                            text-align: center;
+                            .fas {
+                                font-size: 18px;
+                                margin-left: 5px;
+                                z-index: 3;
+                                &:first-child {
+                                    color: #ffeb8d;
+                                }
+                                &:nth-child(2) {
+                                    color: #fed46b;
+                                }
+                                &:nth-child(3) {
+                                    color: #fbb53d;
+                                }
+                                &:nth-child(4) {
+                                    color: #fa9e1b;
+                                }
+                                &:last-child {
+                                    color: var(--gray);
+                                }
+                            }
+                        }
+                    }
+                    .card-button {
+                        position: relative;
+                        display: inline-block;
+                        overflow: hidden;
+                        a {
+                            color: var(--white);
+                            font-size: 13px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                        &:hover {
+                            .button-bg {
+                                top: 0;
+                                left: -100%;
+                            }
+                        }
+                        .button-bg {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 200%;
+                            height: 100%;
+                            background: linear-gradient(
+                                to right,
+                                #fa9e1b,
+                                #8d4fff,
+                                #fa9e1b
+                            );
+                            z-index: -1;
+                            -webkit-transition: all 400ms ease;
+                            -moz-transition: all 400ms ease;
+                            -ms-transition: all 400ms ease;
+                            -o-transition: all 400ms ease;
+                            transition: all 400ms ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
