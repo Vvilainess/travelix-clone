@@ -1388,6 +1388,9 @@ ul {
   left: -50px;
 }
 
+#offers {
+  padding: 105px 0 43px 0;
+}
 #offers .heading-container .offers__heading {
   display: block;
   color: var(--black);
@@ -1395,6 +1398,9 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+#offers .offers-item {
+  margin-top: 90px;
 }
 #offers .offers-item .offers-image-container {
   position: relative;
@@ -1416,6 +1422,79 @@ ul {
   bottom: 30px;
   left: 0;
   background-color: var(--yellow);
+}
+#offers .offers-item .offers-image-container .offers-name a {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+#offers .offers-item .offers-content .offers-price {
+  color: #eda84a;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#offers .offers-item .offers-content .offers-price span {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+#offers .offers-item .offers-content .offers-rating {
+  margin-bottom: 25px;
+}
+#offers .offers-item .offers-content .offers-rating .fas {
+  font-size: 13px;
+  margin-left: 5px;
+  z-index: 3;
+}
+#offers .offers-item .offers-content .offers-rating .fas:first-child {
+  color: #ffeb8d;
+}
+#offers .offers-item .offers-content .offers-rating .fas:nth-child(2) {
+  color: #fed46b;
+}
+#offers .offers-item .offers-content .offers-rating .fas:nth-child(3) {
+  color: #fbb53d;
+}
+#offers .offers-item .offers-content .offers-rating .fas:nth-child(4) {
+  color: #fa9e1b;
+}
+#offers .offers-item .offers-content .offers-rating .fas:last-child {
+  color: var(--gray);
+}
+#offers .offers-item .offers-content .offers-text {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 2;
+  margin-bottom: 24px;
+}
+#offers .offers-item .offers-content .offers-icons {
+  margin-bottom: 56px;
+}
+#offers .offers-item .offers-content .offers-icons .offers-icons-list .offers-icon-item {
+  padding-right: 15px;
+}
+#offers .offers-item .offers-content .offers-readmore a {
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+}
+#offers .offers-item .offers-content .offers-readmore a:hover {
+  color: #fa9e1b;
 }
 
 /*# sourceMappingURL=style.css.map */
