@@ -15,13 +15,13 @@
         opacity: 1;
         &.scrolled {
             visibility: hidden;
-            height: 0;
-            transition: all ease-in-out 400ms;
-            -webkit-transition: all ease-in-out 400ms;
-            -moz-transition: all ease-in-out 400ms;
-            -ms-transition: all ease-in-out 400ms;
-            -o-transition: all ease-in-out 400ms;
             opacity: 0;
+            height: 0;
+            transition: all 400ms ease;
+            -webkit-transition: all 400ms ease;
+            -moz-transition: all 400ms ease;
+            -ms-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
         }
         .grid {
             .row {
@@ -107,16 +107,17 @@
     .navbar {
         display: block;
         background-color: rgba(54, 19, 84, 0.6);
+        z-index: 10;
         .grid {
             .row {
                 .col {
                     &.main-nav-col {
                         height: 143px;
-                        -webkit-transition: all 500ms ease;
-                        -moz-transition: all 500ms ease;
-                        -ms-transition: all 500ms ease;
-                        -o-transition: all 500ms ease;
-                        transition: all 500ms ease;
+                        -webkit-transition: all 600ms ease-in-out;
+                        -moz-transition: all 600ms ease-in-out;
+                        -ms-transition: all 600ms ease-in-out;
+                        -o-transition: all 600ms ease-in-out;
+                        transition: all 600ms ease-in-out;
                         &.scrolled {
                             height: 100px;
                         }

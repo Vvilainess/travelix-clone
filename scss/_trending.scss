@@ -1,0 +1,54 @@
+#trending {
+    position: relative;
+    padding-top: 105px;
+    padding-bottom: 50px;
+    .trending-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(to right, #fa9e1b, #8d4fff);
+    }
+    .section-title {
+        display: block;
+        color: var(--black);
+        font-style: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .row-container {
+        margin-top: 90px;
+        .trending-item {
+            margin-bottom: 55px;
+            .trending-item-content {
+                margin-left: 12px;
+                .trending-item-title {
+                    margin-top: 3px;
+                    margin-bottom: 5px;
+                    a {
+                        color: #2d2c2c;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+                .trending-item-price {
+                    color: #fa9e1b;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                }
+                .trending-item-locate {
+                    color: #929191;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

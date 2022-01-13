@@ -25,11 +25,12 @@
         }
     }
     .cta__container {
+        position: relative;
         .cta__content {
             position: relative;
             background-color: var(--white);
-            z-index: 2;
             padding: 90px 70px;
+            z-index: 2;
             .cta__heading {
                 margin-bottom: 4px;
                 color: var(--black);
@@ -109,10 +110,18 @@
         }
 
         .swiper-button-next {
-            right: -50px;
+            right: -80px;
+            .fas {
+                color: var(--white);
+                font-size: 10px;
+            }
         }
         .swiper-button-prev {
-            left: -50px;
+            left: -80px;
+            .fas {
+                color: var(--white);
+                font-size: 10px;
+            }
         }
     }
 }
