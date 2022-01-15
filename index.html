@@ -24,11 +24,11 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
             rel="stylesheet"
         />
-        <title>Travelix Website</title>
+        <title>Travelix</title>
     </head>
     <body>
         <header id="header">
-            <div class="top-bar">
+            <div class="header__top-bar">
                 <div class="grid wide">
                     <div class="row">
                         <div class="col d-flex justify-center">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="navbar">
+            <div class="header__navbar">
                 <div class="grid wide">
                     <div class="row">
                         <div
@@ -90,7 +90,7 @@
                                 </a>
                                 <a href="#" class="brand-title">Travelix</a>
                             </div>
-                            <nav class="nav">
+                            <nav class="nav hide-for-mobile">
                                 <ul class="menu-list d-flex justify-center">
                                     <li class="menu-item">
                                         <a href="#" class="menu-link">home</a>
@@ -113,25 +113,52 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="menu-btn">
-                                <i class="fas fa-bars"></i>
-                            </div>
-                            <div class="search-btn">
-                                <i class="fas fa-search"></i>
+                            <div class="tools d-flex items-center">
+                                <div class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="menu-button hide-for-pc">
+                                    <i class="fas fa-bars"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="res-menu d-flex justify-center items-center column">
+            <div class="res-menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="res-menu-logo">
+                <img src="./assets/images/logo.png" alt="logo" />
+            </div>
+            <ul class="res-menu-list">
+                <li class="res-menu-item">
+                    <a href="#" class="res-menu-link">home</a>
+                </li>
+                <li class="res-menu-item">
+                    <a href="#" class="res-menu-link">about us</a>
+                </li>
+                <li class="res-menu-item">
+                    <a href="#" class="res-menu-link">offers</a>
+                </li>
+                <li class="res-menu-item">
+                    <a href="#" class="res-menu-link">news</a>
+                </li>
+                <li class="res-menu-item">
+                    <a href="#" class="res-menu-link">contact</a>
+                </li>
+            </ul>
+        </div>
         <section id="hero">
             <div class="swiper hero__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="swiper-bg"></div>
-                        <div class="swiper-content">
-                            <h1 class="swiper-header">discover</h1>
-                            <p class="swiper-paragraph">the world</p>
+                        <div class="hero__bg"></div>
+                        <div class="hero__content">
+                            <h1 class="content-header">discover</h1>
+                            <p class="content-paragraph">the world</p>
                             <div class="swiper-button rounded-button">
                                 <div class="button-bg"></div>
                                 <a href="#"
@@ -144,10 +171,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper-bg"></div>
-                        <div class="swiper-content">
-                            <h1 class="swiper-header">discover</h1>
-                            <p class="swiper-paragraph">the world</p>
+                        <div class="hero__bg"></div>
+                        <div class="hero__content">
+                            <h1 class="content-header">discover</h1>
+                            <p class="content-paragraph">the world</p>
                             <div class="swiper-button rounded-button">
                                 <div class="button-bg"></div>
                                 <a href="#"
@@ -160,10 +187,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="swiper-bg"></div>
-                        <div class="swiper-content">
-                            <h1 class="swiper-header">discover</h1>
-                            <p class="swiper-paragraph">the world</p>
+                        <div class="hero__bg"></div>
+                        <div class="hero__content">
+                            <h1 class="content-header">discover</h1>
+                            <p class="content-paragraph">the world</p>
                             <div class="swiper-button rounded-button">
                                 <div class="button-bg"></div>
                                 <a href="#"
@@ -1258,22 +1285,22 @@
                                     </li>
                                     <li class="footer-logo-item">
                                         <a href="#" class="footer-logo-link">
-                                            <i class="fab fa-pinterest"></i>
+                                            <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li class="footer-logo-item">
                                         <a href="#" class="footer-logo-link">
-                                            <i class="fab fa-pinterest"></i>
+                                            <i class="fab fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li class="footer-logo-item">
                                         <a href="#" class="footer-logo-link">
-                                            <i class="fab fa-pinterest"></i>
+                                            <i class="fab fa-dribbble"></i>
                                         </a>
                                     </li>
                                     <li class="footer-logo-item">
                                         <a href="#" class="footer-logo-link">
-                                            <i class="fab fa-pinterest"></i>
+                                            <i class="fab fa-behance"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -1283,8 +1310,10 @@
                     <div class="col l-3">
                         <div class="footer-column">
                             <div class="footer-title">blog posts</div>
-                            <div class="footer-content">
-                                <div class="footer-blog-item">
+                            <div class="footer-content footer-blog">
+                                <div
+                                    class="footer-blog-item d-flex justify-between"
+                                >
                                     <div class="footer-blog-image">
                                         <img
                                             src="./assets/images/footer_blog_1.jpg"
@@ -1302,10 +1331,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="footer-blog-item">
+                                <div
+                                    class="footer-blog-item d-flex justify-between"
+                                >
                                     <div class="footer-blog-image">
                                         <img
-                                            src="./assets/images/footer_blog_1.jpg"
+                                            src="./assets/images/footer_blog_2.jpg"
                                             alt=""
                                         />
                                     </div>
@@ -1320,10 +1351,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="footer-blog-item">
+                                <div
+                                    class="footer-blog-item d-flex justify-between"
+                                >
                                     <div class="footer-blog-image">
                                         <img
-                                            src="./assets/images/footer_blog_1.jpg"
+                                            src="./assets/images/footer_blog_3.jpg"
                                             alt=""
                                         />
                                     </div>
@@ -1344,7 +1377,7 @@
                     <div class="col l-3">
                         <div class="footer-column">
                             <div class="footer-title">tags</div>
-                            <div class="footer-content">
+                            <div class="footer-content footer-tags">
                                 <ul class="footer-tags-list">
                                     <li class="footer-tags-item">
                                         <a href="#">design</a>
@@ -1377,24 +1410,58 @@
                     <div class="col l-3">
                         <div class="footer-column">
                             <div class="footer-title">contact info</div>
-                            <div class="footer-content">
-                                <div class="footer-contact-item">
-                                    <i class="fas fa-phone"> </i>
-                                    <a href=""
-                                        >4127 Raoul Wallenber 45b-c Gibraltar</a
-                                    >
+                            <div class="footer-content footer-contact">
+                                <div class="footer-content-item d-flex">
+                                    <div class="footer-contact-icon">
+                                        <div class="icon">
+                                            <img
+                                                src="./assets/images/placeholder.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="contact-info">
+                                        4127 Raoul Wallenber 45b-c Gibraltar
+                                    </div>
                                 </div>
-                                <div class="footer-content-item">
-                                    <i class="fas fa-phone"></i>
-                                    <a href="">2556-808-8613</a>
+                                <div class="footer-content-item d-flex">
+                                    <div class="footer-contact-icon">
+                                        <div class="icon">
+                                            <img
+                                                src="./assets/images/phone-call.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="contact-info">
+                                        2556-808-8613
+                                    </div>
                                 </div>
-                                <div class="footer-content-item">
-                                    <i class="fas fa-phone"></i>
-                                    <a href="">contactme@gmail.com</a>
+                                <div class="footer-content-item d-flex">
+                                    <div class="footer-contact-icon">
+                                        <div class="icon">
+                                            <img
+                                                src="./assets/images/message.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="contact-info">
+                                        contactme@gmail.com
+                                    </div>
                                 </div>
-                                <div class="footer-content-item">
-                                    <i class="fas fa-phone"></i>
-                                    <a href=""> www.colorlib.com</a>
+                                <div class="footer-content-item d-flex">
+                                    <div class="footer-contact-icon">
+                                        <div class="icon">
+                                            <img
+                                                src="./assets/images/planet-earth.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="contact-info">
+                                        www.colorlib.com
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Beyond";
+    src: url(../fonts/beyond_the_mountains.otf) format("opentype"),
+        url(../fonts/beyond_the_mountains.ttf) format("truetype");
+}
 *,
 *::before,
 *::after {
@@ -30,27 +35,11 @@ textarea {
 }
 
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --violet: #31124b;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #fa9e1b;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
+    --primary: #fa9e1c;
+    --secondary: #2d2c2c;
+    --white: #ffffff;
     --light: #f8f9fa;
+    --dark: #929191;
     --dark: #343a40;
     --black: #000;
 }
@@ -95,14 +84,11 @@ textarea {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    cursor: pointer;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    &:hover {
-        border: solid 2px linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
-    }
+    cursor: pointer;
 }
 
 /* rounded button */
@@ -135,11 +121,6 @@ textarea {
         -moz-border-radius: 27px;
         -ms-border-radius: 27px;
         -o-border-radius: 27px;
-    }
-    & p {
-        display: inline-block;
-        padding-right: 7px;
-        color: var(--white);
     }
     .dot {
         display: inline-block;
@@ -179,5 +160,15 @@ textarea {
 
     &::-ms-input-placeholder {
         color: var(--white);
+    }
+}
+.hide-for-mobile {
+    @include breakpoint-down(large) {
+        display: none;
+    }
+}
+.hide-for-pc {
+    @include breakpoint-up(large) {
+        display: none;
     }
 }

@@ -27,6 +27,18 @@
             };
         });
     }
+    function toggleMenu() {
+        const menuBtn = $(".menu-button");
+        const closeBtn = $(".res-menu-close");
+        const resMenu = $(".res-menu");
+        menuBtn.onclick = () => {
+            resMenu.classList.add("active");
+        };
+        closeBtn.onclick = () => {
+            resMenu.classList.remove("active");
+        };
+    }
+    toggleMenu();
     searchMenu();
     scrollTopHeader();
 })();
