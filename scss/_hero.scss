@@ -69,13 +69,16 @@
                     font-family: "Beyond";
                     color: var(--white);
                     line-height: normal;
+                    @include breakpoint-down(large) {
+                        font-size: 60px;
+                        margin-bottom: 30px;
+                    }
                 }
                 .swiper-button {
                     position: absolute;
                     display: inline-block;
                     bottom: -60%;
                     left: 50%;
-                    margin-top: 30px;
                     overflow: hidden;
                     transform: translate(-50%, -50%);
                     -webkit-transform: translate(-50%, -50%);

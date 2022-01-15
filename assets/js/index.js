@@ -4,8 +4,8 @@
     function scrollTopHeader() {
         window.onscroll = () => {
             const offsetY = window.pageYOffset;
-            const topBar = $(".top-bar");
-            const navBar = $(".navbar");
+            const topBar = $(".header__top-bar");
+            const navBar = $(".header__navbar");
             const navBarMenu = $(".main-nav-col");
             if (offsetY >= 200) {
                 topBar.classList.add("scrolled");

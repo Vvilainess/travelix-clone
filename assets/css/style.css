@@ -3,6 +3,10 @@
   font-family: "Beyond";
   src: url(../fonts/beyond_the_mountains.otf) format("opentype"), url(../fonts/beyond_the_mountains.ttf) format("truetype");
 }
+html {
+  font-size: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -12,7 +16,7 @@
 }
 
 body {
-  font-size: 100%;
+  font-size: inherit;
   font-family: "Open Sans", sans-serif;
   background-color: var(--white);
   line-height: 2;
@@ -48,6 +52,7 @@ textarea {
   --black: #000;
 }
 
+/* font size */
 /* flex-box */
 .d-flex {
   display: flex;
@@ -1086,12 +1091,17 @@ textarea {
   color: var(--white);
   line-height: normal;
 }
+@media (max-width: 991px) {
+  #hero .swiper .swiper-slide .hero__content .content-paragraph {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+}
 #hero .swiper .swiper-slide .hero__content .swiper-button {
   position: absolute;
   display: inline-block;
   bottom: -60%;
   left: 50%;
-  margin-top: 30px;
   overflow: hidden;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);

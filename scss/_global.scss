@@ -3,6 +3,9 @@
     src: url(../fonts/beyond_the_mountains.otf) format("opentype"),
         url(../fonts/beyond_the_mountains.ttf) format("truetype");
 }
+html {
+    font-size: 100%;
+}
 *,
 *::before,
 *::after {
@@ -11,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    font-size: 100%;
+    font-size: inherit;
     font-family: "Open Sans", sans-serif;
     background-color: var(--white);
     line-height: 2;
@@ -43,6 +46,8 @@ textarea {
     --dark: #343a40;
     --black: #000;
 }
+/* font size */
+
 /* flex-box */
 .d-flex {
     display: flex;
