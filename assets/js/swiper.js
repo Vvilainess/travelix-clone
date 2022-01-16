@@ -27,4 +27,18 @@ const testimonialsSlider = new Swiper(".swiper.testimonials__slider", {
         nextEl: ".testimonials-button-slider.swiper-button-next",
         prevEl: ".testimonials-button-slider.swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    },
 });

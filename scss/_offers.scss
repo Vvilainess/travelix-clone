@@ -16,9 +16,6 @@
             position: relative;
             width: 100%;
             height: 100%;
-            @include breakpoint-down(large) {
-                height: 708px;
-            }
             .offers-image-bg {
                 position: absolute;
                 top: 0;
@@ -47,7 +44,7 @@
             }
         }
         .offers-content {
-            @include breakpoint-down(large) {
+            @include breakpoint-down(xlarge) {
                 margin-top: 40px;
             }
             .offers-price {
@@ -64,7 +61,7 @@
             }
             .offers-rating {
                 margin-bottom: 25px;
-                @include breakpoint-down(large) {
+                @include breakpoint-down(xlarge) {
                     margin-bottom: 18px;
                 }
                 .fas {
@@ -95,13 +92,13 @@
                 text-transform: capitalize;
                 line-height: 2;
                 margin-bottom: 24px;
-                @include breakpoint-down(large) {
+                @include breakpoint-down(xlarge) {
                     margin-bottom: 18px;
                 }
             }
             .offers-icons {
                 margin-bottom: 56px;
-                @include breakpoint-down(large) {
+                @include breakpoint-down(xlarge) {
                     margin-bottom: 46px;
                 }
                 .offers-icons-list {

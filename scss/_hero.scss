@@ -63,6 +63,9 @@
                     @include breakpoint-down(large) {
                         font-size: 72px;
                     }
+                    @include breakpoint-down(xxlarge) {
+                        font-size: 92px;
+                    }
                 }
                 .content-paragraph {
                     font-size: 100px;
@@ -72,6 +75,9 @@
                     @include breakpoint-down(large) {
                         font-size: 60px;
                         margin-bottom: 30px;
+                    }
+                    @include breakpoint-down(xxlarge) {
+                        font-size: 80px;
                     }
                 }
                 .swiper-button {
