@@ -13,6 +13,7 @@
         -o-transition: all 400ms ease;
         transition: all 400ms ease;
         opacity: 1;
+        z-index: 3;
         &.scrolled {
             visibility: hidden;
             opacity: 0;
@@ -110,11 +111,12 @@
                 .col {
                     &.main-nav-col {
                         height: 143px;
-                        -webkit-transition: all 600ms ease-in-out;
-                        -moz-transition: all 600ms ease-in-out;
-                        -ms-transition: all 600ms ease-in-out;
-                        -o-transition: all 600ms ease-in-out;
-                        transition: all 600ms ease-in-out;
+                        -webkit-transition: all 400ms ease;
+                        -moz-transition: all 400ms ease;
+                        -ms-transition: all 400ms ease;
+                        -o-transition: all 400ms ease;
+                        transition: all 400ms ease;
+                        z-index: 10;
                         &.scrolled {
                             height: 100px;
                         }

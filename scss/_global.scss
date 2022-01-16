@@ -17,7 +17,6 @@ body {
     font-size: inherit;
     font-family: "Open Sans", sans-serif;
     background-color: var(--white);
-    line-height: 2;
 }
 a {
     text-decoration: none;
@@ -40,9 +39,10 @@ textarea {
 :root {
     --primary: #fa9e1c;
     --secondary: #2d2c2c;
+    --purple: #31124b;
     --white: #ffffff;
     --light: #f8f9fa;
-    --dark: #929191;
+    --gray: #929191;
     --dark: #343a40;
     --black: #000;
 }
