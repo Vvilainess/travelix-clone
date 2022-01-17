@@ -177,9 +177,12 @@ textarea {
     @include breakpoint-down(large) {
         display: none;
     }
+    @include breakpoint-down(xlarge) {
+        display: none;
+    }
 }
 .hide-for-pc {
-    @include breakpoint-up(large) {
+    @include breakpoint-up(xlarge) {
         display: none;
     }
 }

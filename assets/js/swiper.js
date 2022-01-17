@@ -28,9 +28,13 @@ const testimonialsSlider = new Swiper(".swiper.testimonials__slider", {
         prevEl: ".testimonials-button-slider.swiper-button-prev",
     },
     breakpoints: {
-        640: {
-            slidesPerView: 2,
+        360: {
+            slidesPerView: 1,
             spaceBetween: 20,
+        },
+        412: {
+            slidesPerView: 2,
+            spaceBetween: 30,
         },
         768: {
             slidesPerView: 2,
@@ -38,7 +42,7 @@ const testimonialsSlider = new Swiper(".swiper.testimonials__slider", {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 34,
         },
     },
 });

@@ -185,8 +185,13 @@ textarea {
     display: none;
   }
 }
+@media (max-width: 1023px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .hide-for-pc {
     display: none;
   }
@@ -466,6 +471,16 @@ textarea {
 
   .m-o-11 {
     margin-left: 91.66667%;
+  }
+}
+@media (max-width: 740px) {
+  .grid.wide {
+    max-width: 98%;
+  }
+
+  .row {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 /* PC medium resolution > */
@@ -808,32 +823,32 @@ textarea {
   -ms-transition: all 400ms ease;
   -o-transition: all 400ms ease;
 }
-#header .header__top-bar .grid .row .col {
+#header .header__top-bar .grid .row .top-bar-menu {
   width: 100%;
 }
-#header .header__top-bar .grid .row .col .phone-number {
+#header .header__top-bar .grid .row .top-bar-menu .phone-number {
   color: var(--white);
   font-size: 0.625rem;
   line-height: 36px;
   margin-right: 36px;
 }
-#header .header__top-bar .grid .row .col .social .social-list {
+#header .header__top-bar .grid .row .top-bar-menu .social .social-list {
   display: block;
   list-style: none;
   align-items: center;
   height: 100%;
   align-content: center;
 }
-#header .header__top-bar .grid .row .col .social .social-list .social-item {
+#header .header__top-bar .grid .row .top-bar-menu .social .social-list .social-item {
   list-style: none;
   display: inline-block;
   height: 100%;
 }
-#header .header__top-bar .grid .row .col .social .social-list .social-item .social-icon {
+#header .header__top-bar .grid .row .top-bar-menu .social .social-list .social-item .social-icon {
   line-height: 36px;
   padding: 0 0.625rem;
 }
-#header .header__top-bar .grid .row .col .social .social-list .social-item .social-icon i {
+#header .header__top-bar .grid .row .top-bar-menu .social .social-list .social-item .social-icon i {
   color: var(--white);
   font-size: 12px;
   -webkit-transition: all 200ms ease;
@@ -842,13 +857,13 @@ textarea {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-#header .header__top-bar .grid .row .col .social .social-list .social-item .social-icon i:hover {
+#header .header__top-bar .grid .row .top-bar-menu .social .social-list .social-item .social-icon i:hover {
   color: var(--primary);
 }
-#header .header__top-bar .grid .row .col .user-box {
+#header .header__top-bar .grid .row .top-bar-menu .user-box {
   margin-left: auto;
 }
-#header .header__top-bar .grid .row .col .user-box .login-btn {
+#header .header__top-bar .grid .row .top-bar-menu .user-box .login-btn {
   color: var(--white);
   font-size: 0.625rem;
   text-transform: uppercase;
@@ -856,10 +871,10 @@ textarea {
   position: relative;
   padding-right: 14px;
 }
-#header .header__top-bar .grid .row .col .user-box .login-btn:hover {
+#header .header__top-bar .grid .row .top-bar-menu .user-box .login-btn:hover {
   color: var(--primary);
 }
-#header .header__top-bar .grid .row .col .user-box .login-btn::after {
+#header .header__top-bar .grid .row .top-bar-menu .user-box .login-btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -869,13 +884,13 @@ textarea {
   height: 14px;
   background-color: var(--white);
 }
-#header .header__top-bar .grid .row .col .user-box .register-btn {
+#header .header__top-bar .grid .row .top-bar-menu .user-box .register-btn {
   color: var(--white);
   font-size: 0.625rem;
   text-transform: uppercase;
   line-height: 36px;
 }
-#header .header__top-bar .grid .row .col .user-box .register-btn:hover {
+#header .header__top-bar .grid .row .top-bar-menu .user-box .register-btn:hover {
   color: var(--primary);
 }
 #header .header__navbar {
@@ -1838,13 +1853,13 @@ textarea {
   font-size: 11px;
 }
 #testimonials .testimonials__slider .testimonials__item .testimonials-container-content .testimonials-quote {
-  padding: 50px 54px 65px 36px;
+  padding: 44px 40px 0 38px;
 }
 #testimonials .testimonials__slider .testimonials__item .testimonials-container-content .testimonials-quote h1 {
   color: var(--white);
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 #testimonials .testimonials__slider .testimonials__item .testimonials-container-content .testimonials-quote p {
   color: var(--white);
