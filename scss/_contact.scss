@@ -1,6 +1,9 @@
 #contact {
     position: relative;
     padding-bottom: 105px;
+    @include breakpoint-down(small) {
+        padding-bottom: 70px;
+    }
     .contact-bg {
         position: absolute;
         top: 0;
@@ -17,6 +20,9 @@
             .contact-form-container {
                 padding: 74px 48px 88px;
                 background: linear-gradient(to top right, #fa9e1b, #8d4fff);
+                @include breakpoint-down(small) {
+                    padding: 18px 16px 24px;
+                }
                 .contact-form-title {
                     color: var(--white);
                     font-size: 30px;
@@ -44,6 +50,11 @@
                     .contact-form-button {
                         margin-top: 52px;
                         background-color: #31124b;
+                        @include breakpoint-down(small) {
+                            margin-top: 30px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
                     }
                 }
             }

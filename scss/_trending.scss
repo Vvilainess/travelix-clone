@@ -2,6 +2,10 @@
     position: relative;
     padding-top: 105px;
     padding-bottom: 50px;
+    @include breakpoint-down(small) {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
     .trending-line {
         position: absolute;
         top: 0;
