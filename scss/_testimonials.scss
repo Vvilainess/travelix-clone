@@ -108,19 +108,19 @@
         }
     }
     .testimonials-button-slider {
-        &.swiper-button-prev {
+        &.swiper-btn-prev {
             left: 100px;
-            border: solid 2px var(--gray);
+            border: solid 2px var(--white);
             .fas {
-                color: var(--gray);
+                color: var(--white);
                 font-size: 10px;
             }
         }
-        &.swiper-button-next {
+        &.swiper-btn-next {
             right: 100px;
-            border: solid 2px var(--gray);
+            border: solid 2px var(--white);
             .fas {
-                color: var(--gray);
+                color: var(--white);
                 font-size: 10px;
             }
         }

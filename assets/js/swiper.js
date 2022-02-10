@@ -3,8 +3,8 @@ const heroSlider = new Swiper(".swiper.hero__slider", {
     loop: true,
     speed: 1000,
     navigation: {
-        nextEl: ".hero-button__slider.swiper-button-next",
-        prevEl: ".hero-button__slider.swiper-button-prev",
+        nextEl: ".hero-button__slider.swiper-btn-next",
+        prevEl: ".hero-button__slider.swiper-btn-prev",
     },
 });
 const ctaSlider = new Swiper(".swiper.cta__slider", {
@@ -12,8 +12,8 @@ const ctaSlider = new Swiper(".swiper.cta__slider", {
     loop: true,
     speed: 1000,
     navigation: {
-        nextEl: ".cta-button__slider.swiper-button-next",
-        prevEl: ".cta-button__slider.swiper-button-prev",
+        nextEl: ".cta-button__slider.swiper-btn-next",
+        prevEl: ".cta-button__slider.swiper-btn-prev",
     },
 });
 const testimonialsSlider = new Swiper(".swiper.testimonials__slider", {
@@ -24,8 +24,8 @@ const testimonialsSlider = new Swiper(".swiper.testimonials__slider", {
     speed: 800,
     loopFillGroupWithBlank: true,
     navigation: {
-        nextEl: ".testimonials-button-slider.swiper-button-next",
-        prevEl: ".testimonials-button-slider.swiper-button-prev",
+        nextEl: ".testimonials-button-slider.swiper-btn-next",
+        prevEl: ".testimonials-button-slider.swiper-btn-prev",
     },
     breakpoints: {
         280: {
